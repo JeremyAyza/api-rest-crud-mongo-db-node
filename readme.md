@@ -81,16 +81,5 @@ npm install
 npm run dev
 ```
 
+----
 
-🧑‍💻 Author
-Your Name
-
-🌐 Portfolio
-
-💼 LinkedIn
-
-🐱 GitHub
-
-PORT=5000
-MONGO_URI=mongodb://localhost:27017/inventory
-JWT_SECRET=your_super_secret_key

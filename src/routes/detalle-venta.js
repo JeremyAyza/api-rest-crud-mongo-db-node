@@ -17,7 +17,7 @@ router.post("/detalleVenta",(req,res)=>{
 
 
 router.get("/detalleVenta", (req, res) => {
-	detalleVentaSchema.find().populate('id_detalleVenta').populate('id_producto')
+	detalleVentaSchema.find().populate('id_venta').populate('id_producto')
 		.then(data => res.json(data))
 		.catch(error => res.json({ message: error }))
 })

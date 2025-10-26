@@ -7,8 +7,8 @@ const router=express.Router()
 
 //routes
 router.post("/login", (req, res) => {
-	const {usuario,password} = usuarioSchema(req.body)
-	usuarioSchema.findOne({usuario:usuario,password:password})
+	const {username,password} = req.body
+	usuarioSchema.findOne({username:username,password:password})
 		.then(data => data ? res.json(data) : res.json({ rpta: false, mensaje: "Credenciales incorrectas" }))
 		.catch(error => res.json({ rpta:false,mensaje:"Credenciales incorrectas" }))
 })

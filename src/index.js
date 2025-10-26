@@ -11,7 +11,7 @@ const PORT = (process.env.PORT||9000)
 
 const clienteRoutes = require('./routes/cliente')
 const ventaRoutes = require('./routes/venta')
-const detalleVentaeRoutes = require('./routes/detalleVenta')
+const detalleVentaRoutes = require('./routes/detalle-venta')
 const productoRoutes = require('./routes/producto')
 
 mongoose.connect(process.env.MONGODB_URI)
@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGODB_URI)
 app.use(express.json())
 app.use("/api", ventaRoutes)
 app.use("/api", clienteRoutes)
-app.use("/api", detalleVentaeRoutes)
+app.use("/api", detalleVentaRoutes)
 app.use("/api", productoRoutes)
 
 

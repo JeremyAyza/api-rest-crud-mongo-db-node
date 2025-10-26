@@ -10,7 +10,7 @@ const productoSchema=mongoose.Schema({
 		type: String,
 		require: true
 	},
-	decripcion: {
+	descripcion: {
 		type: String,
 		require: true
 	},

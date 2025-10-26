@@ -25,7 +25,7 @@ const usuarioSchema=mongoose.Schema({
 		type: Boolean,
 		default:true
 	},
-	ventas:[{type:Schema.Types.ObjectId,ref:'venta'}]
+	ventas:[{type:mongoose.Schema.Types.ObjectId,ref:'venta'}]
 
 
 
